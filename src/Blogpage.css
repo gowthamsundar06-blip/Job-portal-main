@@ -18,9 +18,18 @@
   /* border:1px solid #333; */
   padding: 20px;
 }
+.arrow{
+  display: flex;
+  align-items: center;
+
+}
+.photo{
+  width: 35px;
+  height: 35px;
+}
 
 .content{
-  max-height: 400px;
+  max-height: max;
 }
 
 .container{
@@ -82,7 +91,7 @@
   background: transparent;
   background-color: blue;
   color: white;
-  border: 1px solid #ccc;
+  border: 1px solid gainsboro;
   padding: 6px 14px;
   font-size: 14px;
   cursor: pointer;
@@ -94,4 +103,28 @@
   font-size: 40px;
   font-weight: 800;
   margin-top: 12px;
+}
+
+.toggle {
+  display: none;
+}
+
+
+.more-text {
+  display: none;
+}
+
+
+.toggle:checked ~ p .more-text {
+  display: block;
+  margin-top: 8px;
+}
+
+
+.read-more {
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 6px;
 }
