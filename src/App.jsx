@@ -20,7 +20,7 @@ import { JobsThroughCompany } from './Components-Jobseeker/JobsThroughCompany'
 import { AboutUs } from './Components-LandingPage/AboutUs'
 import { SearchResults } from './Components-Jobseeker/SearchResults'
 import Blogpage from './Blogpage'
-
+import Dashhead from './Dashhead'
 
 const router = createBrowserRouter([{
   path: '/Job-portal',
@@ -98,7 +98,13 @@ const router = createBrowserRouter([{
 {
   path: '/Job-portal/jobseeker/blogpage',
   element: <Blogpage/>,
-}])
+},
+{
+   path: '/Job-portal/jobseeker/Dashhead',
+  element: <Dashhead/>,
+}
+
+])
 
 function App() {
   return (
